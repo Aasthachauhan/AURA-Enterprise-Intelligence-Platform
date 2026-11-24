@@ -1,0 +1,7 @@
+Vulnerability_ID,Component,CVE_Identifier,CVSS_Score,Severity,Exploitability,Patch_SLA_Days,Remediation_Status
+SEC-CVE-001,FastAPI_Web_Framework,CVE-2025-43210,5.3,Medium,Proof-of-Concept,30,Patched_v0.115
+SEC-CVE-002,OpenSSL_TLS_Layer,CVE-2025-11928,7.5,High,Theoretical,14,Patched_v3.2.1
+SEC-CVE-003,PostgreSQL_Driver,CVE-2024-99812,4.1,Low,None,60,Accepted_Risk
+SEC-CVE-004,PyJWT_Token_Parser,CVE-2025-22345,8.8,High,Active_In_Wild,7,Remediated_Strict_Verify
+SEC-CVE-005,Docker_Base_Image,CVE-2025-33100,6.2,Medium,None,30,Scheduled_Q4
+SEC-CVE-006,Redis_Cluster_Client,CVE-2024-77211,3.2,Low,None,90,Verified_Safe

@@ -1,0 +1,72 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: aura-backend
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_ENV=production
+      - DATABASE_URL=postgresql+asyncpg://aura_user:aura_password@postgres:5432/aura_db
+      - REDIS_URL=redis://redis:6379/0
+      - SECRET_KEY=aura-super-secret-production-grade-encryption-key-change-in-production-32chars
+      - ALLOWED_ORIGINS=http://localhost:3000,http://localhost:5173,http://localhost:80
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - uploads_data:/app/backend/uploads
+      - storage_data:/app/backend/storage
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: aura-frontend
+    restart: always
+    ports:
+      - "5173:80"
+      - "80:80"
+    depends_on:
+      - backend
+
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: aura-postgres
+    restart: always
+    environment:
+      POSTGRES_USER: aura_user
+      POSTGRES_PASSWORD: aura_password
+      POSTGRES_DB: aura_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U aura_user -d aura_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: aura-redis
+    restart: always
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  pgdata:
+  uploads_data:
+  storage_data:

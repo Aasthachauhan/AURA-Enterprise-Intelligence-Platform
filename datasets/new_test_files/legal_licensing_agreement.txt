@@ -1,0 +1,26 @@
+MASTER ENTERPRISE SOFTWARE LICENSE & SUPPORT AGREEMENT (MLA)
+
+Dated: January 15, 2026
+Between:
+1. QUANTUM ENTERPRISES INC., a Delaware Corporation with its principal office at 500 Technology Way, San Francisco, CA ("Licensor")
+2. GLOBAL ENTERPRISE PARTNERS LLC ("Licensee")
+
+1. GRANT OF LICENSE
+Subject to the terms and conditions of this Agreement, Licensor hereby grants to Licensee a non-exclusive, non-transferable, worldwide commercial license to deploy and operate the AURA Enterprise Intelligence Platform across up to 10,000 internal enterprise users.
+
+2. SERVICE LEVEL AGREEMENT (SLA) & SUPPORT TIERS
+2.1 Uptime Guarantee: Licensor warrants that the Core SaaS Intelligence Platform shall achieve 99.95% Availability during each calendar month.
+2.2 SLA Penalty Credits:
+- If Availability is between 99.0% and 99.95%, Licensee is entitled to a 10% credit of monthly billing fees.
+- If Availability falls below 99.0%, Licensee is entitled to a 25% credit of monthly billing fees.
+2.3 Support Response Times:
+- Priority 1 (System Down / SEV-1): 15-minute initial response, 24x7x365 coverage.
+- Priority 2 (Severe Degradation): 1-hour initial response.
+- Priority 3 (Standard Inquiries): 4-hour business hours response.
+
+3. INDEMNIFICATION & LIABILITY
+Licensor agrees to defend, indemnify, and hold harmless Licensee against any third-party intellectual property infringement claims arising from the authorized use of the licensed software.
+The aggregate liability of either party under this Agreement shall not exceed the total fees paid by Licensee in the twelve (12) months preceding the incident, except for gross negligence, willful misconduct, or breach of Section 4 (Confidentiality).
+
+4. GOVERNING LAW AND JURISDICTION
+This Agreement shall be governed by and construed in accordance with the laws of the State of Delaware, without regard to its conflict of law principles. Any dispute arising hereunder shall be resolved in the state or federal courts situated in New Castle County, Delaware.

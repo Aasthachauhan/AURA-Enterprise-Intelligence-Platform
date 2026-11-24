@@ -1,0 +1,9 @@
+TestCaseID,RequirementID,TestScenario,CoverageStatus,Automated
+TC-101,REQ-001,Verify multi-format ingestion for PDF and DOCX,Passed,Yes
+TC-102,REQ-002,Verify SHA-256 duplicate detection rejects redundant files,Passed,Yes
+TC-103,REQ-003,Verify hybrid RAG combines dense vector and BM25 scores,Passed,Yes
+TC-104,REQ-004,Verify citations include document title and page number,Passed,Yes
+TC-105,REQ-005,Verify insufficient evidence fallback triggers correctly,Passed,Yes
+TC-106,PERF-001,Verify hybrid retrieval p95 latency under 300ms,Pending,No
+TC-107,SEC-001,Verify tenant cross-workspace data access is blocked,Passed,Yes
+TC-108,SEC-002,Verify indirect prompt injection patterns are sanitized,Passed,Yes

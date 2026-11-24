@@ -1,0 +1,16 @@
+MASTER ENTERPRISE SERVICE AGREEMENT (MSA)
+
+1. PARTIES AND SCOPE
+This Agreement is entered into by and between Enterprise Intelligence Corp ("Provider") and Client Organization ("Customer").
+
+2. DATA OWNERSHIP AND INTELLECTUAL PROPERTY
+All documents, files, data, and derived embeddings uploaded by Customer remain the sole and exclusive property of Customer. Provider shall not use Customer data to train foundation models or share data with unauthorized third parties.
+
+3. CONFIDENTIALITY AND SECURITY OBLIGATIONS
+Provider warrants that all customer workspaces are isolated at the database layer. Provider agrees to maintain SOC2 Type II compliance and AES-256 data encryption at rest.
+
+4. LIMITATION OF LIABILITY
+Neither party shall be liable for indirect, incidental, or consequential damages. Maximum aggregate liability shall not exceed the total fees paid under this agreement in the twelve (12) months preceding the claim.
+
+5. TERMINATION AND DATA RETURN
+Upon termination of services, Customer may request complete deletion of all documents, chunks, embeddings, and conversation histories within thirty (30) business days.
