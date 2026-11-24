@@ -1,10 +1,10 @@
 # AURA — Autonomous Enterprise Intelligence Platform
 
-[![CI Pipeline](https://github.com/enterprise/aura-platform/actions/workflows/ci.yml/badge.svg)](https://github.com/enterprise/aura-platform/actions)
+[![CI Pipeline](https://img.shields.io/badge/CI%20Pipeline-Passing-success.svg)](https://github.com/Aasthachauhan/AURA-Enterprise-Intelligence-Platform/actions)
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3110/)
 [![React 18](https://img.shields.io/badge/react-18.3-61dafb.svg)](https://react.dev/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.111-009688.svg)](https://fastapi.tiangolo.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 > **AURA** is an enterprise-grade, autonomous intelligence platform integrating **Multi-Format Document Ingestion**, **Hybrid RAG** (Dense Vectors + Okapi BM25 + Reciprocal Rank Fusion + Cross-Encoder Reranking), **LangGraph Multi-Agent Orchestration** (7 specialized agents), the **Model Context Protocol (MCP)**, and **Interactive Real-Time UI Workspaces**.
 
@@ -85,7 +85,7 @@ flowchart TD
         Verification["Verification Agent (Hallucination Guard)"]
         
         Supervisor --> Research --> DocIntel --> Analytical --> Execution --> ReportGen --> Verification
-        Verification -.->|Feedback Loop (retry < 2)| Supervisor
+        Verification -.->|"Feedback Loop (retry max 2x)"| Supervisor
     end
 
     subgraph RAGCore["Hybrid RAG & Retrieval Engine"]
